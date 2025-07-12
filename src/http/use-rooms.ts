@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query"
-import type { GetRoomsResponse } from "./types/get-rooms-response"
+import { useQuery } from '@tanstack/react-query'
+import type { GetRoomsResponse } from './types/get-room-response'
 
 export function useRooms() {
   return useQuery({
@@ -9,6 +9,6 @@ export function useRooms() {
       const result: GetRoomsResponse = await response.json()
 
       return result
-    }
+    },
   })
 }

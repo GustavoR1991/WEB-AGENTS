@@ -1,5 +1,5 @@
 
-export type GetRoomsAPIResponse = Array<{
+export type GetRoomsResponse = Array<{
   id: string,
   name: string,
   questionCount: number,
